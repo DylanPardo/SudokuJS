@@ -21,7 +21,10 @@ function setup() {
   
   
   let canvas = document.getElementById("defaultCanvas0");
+  document.body.style.margin = "0";
   canvas.style.zIndex = "0";
+  canvas.style.margin = "0";
+  canvas.style.display = "block";
   canvas.style.position = "absolute";
   canvas.style.highlightThickness = "0";
 }
