@@ -100,14 +100,8 @@ function createSudokuGrid() {
   table.style.position = "absolute";
   table.style.top = "50%";
   table.style.left = "50%";
-  table.style.width = "300px";
-  table.style.height = "300px";
 
 // Set the style of the table element to center it on the page whenever the window is resized
-  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
   window.addEventListener("resize", function() {
     table.style.transform = "translate(-50%, -50%)";
     table.style.position = "absolute";
