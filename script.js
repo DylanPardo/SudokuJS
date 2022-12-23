@@ -107,12 +107,17 @@ function createSudokuGrid() {
     table.style.position = "absolute";
     table.style.top = "50%";
     table.style.left = "50%";
-	if (windowWidth < 400) {
-	    table.style.width = "200px";
-	    table.style.height = "200px";
+	
+	if (windowWidth < 600) {
+        cell.style.width = "15px";
+        cell.style.height = "15px";
+		table.style.width = "150px";
+		table.style.height = "150px";
 	  } else {
-	    table.style.width = "300px";
-	    table.style.height = "300px";
+        cell.style.width = "30px";
+        cell.style.height = "30px";
+		table.style.width = "300px";
+		table.style.height = "300px";
 	  }
   });
 
@@ -128,7 +133,7 @@ function createSudokuGrid() {
       cell.style.color = "black";
       cell.style.backgroundColor = "white";
       cell.style.border = ".25px solid white";
-      cell.style.padding = "1px";
+      cell.style.padding = "5px";
       cell.style.textAlign = "center";
       cell.style.verticalAlign = "middle";
       cell.style.width = "30px";
@@ -379,5 +384,7 @@ function hasUniqueSolution(puzzle) {
 }
 
 
+
 // Call the createSudokuGrid function to create the puzzle
+console.log("ere");
 createSudokuGrid();
